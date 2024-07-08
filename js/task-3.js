@@ -1,10 +1,17 @@
-
-
-
-
-
-
-
+const profile = {
+    username: "Jacob",
+    playTime: 300,
+    
+    changeusername(newName) {
+        this.username = newName;
+    },
+    updatePlayTime(hours) {
+        this.playTime += hours;
+    },
+    getInfo() {
+        return `${this.username} has ${this.playЕime} active hours!`;
+    }
+};
 
 // console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 
